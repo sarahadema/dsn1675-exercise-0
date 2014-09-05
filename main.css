@@ -1,0 +1,36 @@
+html {
+    font-family:sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: maroon;
+}
+
+hr {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: maroon;
+}
+
+figure {
+}
+
+dl {
+    border: 1px solid red;
+    overflow: hidden; /* Overflow hidden can be used as a clearfix. It reminds the <dl> to wrap around its floated children */
+}
+
+dt {
+    float: left;
+    clear: left; /*force the <dt> underneath anything floated left */
+    width: 8rem;
+}
+
+dd {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
