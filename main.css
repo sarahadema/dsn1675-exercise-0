@@ -1,32 +1,160 @@
+@-moz-viewport {width: device-width; scale:1;}
+@-ms-viewport {width: device-width; scale:1;}
+@-o-viewport {width: device-width; scale:1;}
+@-webkit-viewport {width: device-width; scale:1;}
+
 html {
+    box-sizing: border-box;
+
+    background-color: #e9e9e9;
+
+    color: #333;
+    font: normal 100%/ 1.5 sans-serif;
     font-family:sans-serif;
     font-size: 1rem;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust: 100%;
+}
+
+*, *: before, *:after { 
+box-sizing:inherit;
+}
+
+article { 
+    margin: 0 auto;
+    width: 320px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba (0,0,0,0.3);
+}
+
+img {
+    display: block;
+    width: 100%
+}
+
+a,
+a:link,
+a:visited {
+    border-bottom: 1px solid rgba(165, 36, 67, 0.4);
+
+    color: #a52443;
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+        background-color: #a52443;
+        color: #fff;
+}
+
+header {
+    padding: 0.8em;
 }
 
 h1 {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    color: maroon;
+    margin: 0;
+    
+    color: #a52443;
+    font-size: 1.125rem;
+    line-height: 1.3333;
 }
 
-hr {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    color: maroon;
+h2 {
+    margin: 0 0 1.5rem;
+
+    color: #a52443;
+    font-size: 1rem;
+}
+
+p {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+.content {
+    padding: 0 0.8rem;
 }
 
 figure {
+    margin: 0 0 1.5rem;
+    padding-left: 0;
+
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+figcaption {
+    padding: 0.8rem;
+
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd;
+
+    color: #666;
+    font-size: 0.7901rem;
+    line-height: 1.8984;
+}
+
+.quote-group {
+    margin-bottom: 1.5rem;
+
+    border-top: 1px solid #ddd;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0.8em;
+
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+
+    font-family: Georgia, serif;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote footer {
+    color: #666;
+    font-size: 0.7901rem;
+    line-height: 1.8984;
+    text-align: right;
+}
+
+aside {
+    margin: 0 0 1.5rem;
+    padding: 1.5rem 0.8em;
+
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 
 dl {
-    border: 1px solid red;
+    margin: 0;
+    padding: 0;
     overflow: hidden; /* Overflow hidden can be used as a clearfix. It reminds the <dl> to wrap around its floated children */
 }
 
 dt {
     float: left;
     clear: left; /*force the <dt> underneath anything floated left */
-    width: 8rem;
+    width: 8em;
+    margin: 0;
+    padding: 0;
 }
 
 dd {
@@ -34,3 +162,55 @@ dd {
     margin: 0;
     padding: 0;
 }
+
+.visually-hidden {
+    display: none;
+}
+
+.tags {
+    margin: 0 0 1em;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.tags >li {
+    display: inline-block;
+    margin-bottom: 0.3em
+}
+
+.tags a,
+.tags a:link,
+.tags a:visited {
+    display: inline-block;
+    padding: 0 0.6em 0.1em;
+
+    background-color: #e8cad1;
+    border:  1px solid #a52443;
+    border-radius: 1.4em;
+
+    color: #a52443;
+}
+
+.tags a:hover.
+.tags a:focus,
+.tags a:active {
+    background-color: #a52443;
+    color: #fff;
+}
+
+footer {
+    padding: 0 0.8rem 0.8rem;
+
+    color: #666;
+    font-size: 0.7901rem;
+    line-height: 1.8984;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
